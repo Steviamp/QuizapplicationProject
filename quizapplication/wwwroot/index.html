@@ -1,0 +1,55 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-container" class="form-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required maxlength="15" placeholder="lowercase letters only">
+                    <small id="username-help">Must contain at least 2 vowels (a, e, i, o, u)</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Number between 100-999">
+                </div>
+                <div class="error-message" id="login-error"></div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <div id="quiz-container" class="quiz-container hidden">
+            <h1 id="quiz-title"></h1>
+            <p id="quiz-description"></p>
+
+            <div id="question-container">
+                <h2 id="question-title"></h2>
+                <div id="question-image" class="question-image"></div>
+                <div id="answers-container"></div>
+                <button id="submit-answer" class="btn">Submit Answer</button>
+            </div>
+
+            <div id="feedback-container" class="feedback hidden">
+                <p id="feedback-text"></p>
+            </div>
+
+            <div id="results-container" class="results hidden">
+                <h2 id="result-title"></h2>
+                <p id="result-score"></p>
+                <p id="result-message"></p>
+                <div id="result-image" class="result-image"></div>
+                <button id="restart-button" class="btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

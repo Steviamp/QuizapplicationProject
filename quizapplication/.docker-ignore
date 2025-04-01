@@ -1,0 +1,14 @@
+
+.dockerignore
+.git
+.gitignore
+.vs
+.vscode
+**/*.user
+bin/
+obj/
+node_modules/
+Dockerfile*
+docker-compose*
+README.md
+test-results/
